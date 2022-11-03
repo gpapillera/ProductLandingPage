@@ -1,0 +1,610 @@
+/* Website Reference: https://www.apple.com/ph/iphone-14-pro/specs/ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  :root{
+    --footer-text-color: rgb(184,184,189);
+    --link: #2584DE;
+    --h2-color: rgb(229, 238, 240);
+    --header-color: rgb(224, 186, 235);
+  }
+
+  body {
+    font-family: 'SF Pro Display', Helvetica, Arial,sans-serif;
+    background-color: #000;
+    color: rgb(206, 206, 211);
+  }
+
+  section, footer{
+    padding: 30px 160px;
+    margin: 0 auto;
+  }
+
+ section .thck{
+  height: 3px;
+  background-color: rgb(128, 133, 165);
+  border: none;
+  border-radius: 2px;
+  margin-top: 3px;
+  margin-bottom: 20px;
+  }
+
+  .link-color{
+    color: var(--link);
+    font-size: 17px;
+    text-decoration: none;
+  }
+
+  .tin{
+  height: .08px;
+  background-color: var(--footer-text-color);
+  border: none;
+  margin: 35px 0;
+  }
+
+  .dropd-tin{
+    height: .08px;
+    background-color: #111111;
+    border: none;
+    margin: 10px 0;
+    }
+
+  .footer-tin{
+    height: .08px;
+    background-color: var(--footer-text-color);
+    border: none;
+    margin: 10px 0;
+    }
+
+/* DISPLAYS: none */
+
+  #header .fa-bars, .dropdown{
+    display: none;
+  }
+
+
+  /* HEADER & NAVIGATION BAR */
+#header{
+  width: 100%;
+  height: 60px;
+  background-color: var(--header-color);
+  position: fixed;
+  top: 0;
+  padding: 0 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: top 0.3s;
+}
+
+#header #header-img{
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+.pre-ordr{
+  border: 0;
+  margin: 0 auto;
+  background-color: var(--footer-text-color);
+  border-radius: 20px;
+  padding: 3px 0;
+}
+
+#nav-bar ul{
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+#nav-bar ul li{
+  padding: 2px 30px;
+}
+
+#nav-bar ul li a {
+    color: rgba(40, 42, 53);
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+
+  #nav-bar ul li a:hover{
+    color: aliceblue;
+  }
+
+
+
+/* FOOTER */
+footer{
+  background-color: #111111;
+  width: 100%;
+}
+
+.futr .ftr{
+  color: var(--footer-text-color);
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.futr .ftr:last-of-type{
+  padding-right: 0;
+}
+
+.futr .futr-cntner{
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  flex-wrap: wrap;
+  gap: 2px 10px;
+}
+
+.futr .futr-cntner .ftr-list{
+  display: flex;
+  justify-content: right;
+  list-style: none;
+ }
+
+.futr .futr-cntner .ftr-list li{
+  padding: 0 8px;
+}
+
+.futr .futr-cntner .ftr-list li:first-of-type{
+  padding-left: 0;
+}
+
+.futr .futr-cntner .ftr-list li:last-of-type{
+  padding-right: 0;
+}
+
+.futr .futr-cntner .ftr-list .vl{
+  border-left: 1px solid #424245;
+  height: 15px;
+  position: relative;
+  top: 5px;
+}
+
+.futr .futr-cntner .ftr-list li a{
+color: var(--footer-text-color);
+font-size: 14px;
+text-decoration: none;
+font-weight: 500;
+}
+
+
+
+
+
+
+
+/* MAIN - PLANDINGPAGE.html */
+h1{
+  font-size: 32px;
+  color: var(--h2-color);
+}
+
+/* iPhone 14 Pro - Section */
+#form{
+  text-align: center;
+  padding: 200px 20px;
+  background-color: #181818;
+  border-radius: 3px;
+}
+
+input[type=email]{
+  width: 30%;
+  padding: 9px 10px;
+  margin: 9px auto;
+  display: block;
+  border: .5px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 1em;
+}
+
+input[type=submit]{
+  width: 20%;
+  padding: 5px 10px;
+  margin: 9px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+}
+
+input[type=submit]:hover{
+  background-color: var(--header-color);
+  border: 1px solid #ccc;
+  transition: .8s;
+}
+
+/* Features - Section */
+iframe{
+  padding:  20px;
+  border: 2px solid #424245;
+  margin: 30px;
+  border-radius: 5px;
+}
+
+#features p{
+line-height: 1.6;
+}
+
+#features h3{
+  font-size: 24px;
+  text-align: center;
+}
+
+.feature-indent{
+padding: 2px 90px;
+}
+
+
+/* Pre-order - Section */
+
+.pre-order-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: Left;
+  gap: 20px;
+  padding-top: 50px;
+}
+
+.animate-fading{
+  animation:fading 4s}
+  @keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:2}
+}
+
+.pro-image-container{
+  flex: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.max-image-container{
+  flex: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navigatorr{
+  text-align:center!important;
+  padding: 0.01em 16px;
+  margin-top:16px!important;
+  margin-bottom:16px!important;
+  font-size: 20px!important;
+  color: #111111!important;
+  position: relative;
+  left:50%;
+  bottom: 50px;
+  transform:translate(-50%,0%);
+  -ms-transform:translate(-50%,0%);
+  width: 100%;
+}
+
+.navigatorr:hover
+{color: var(--header-color)!important;}
+
+.mySlides{
+  width: 100%;
+}
+
+.left-nav{
+  float: left!important;
+  color: #111111!important;
+  cursor:pointer
+}
+
+.left-nav:hover{
+color:var(--header-color)!important;  
+}
+
+.right-nav{
+  float: right!important;
+  color: #111111!important;
+  cursor:pointer;
+}
+
+.right-nav:hover{
+color:var(--header-color)!important;  
+}
+
+.badge{
+  border-radius:50%;
+  background-color: #111111;
+  color: #111111;
+  display:inline-block;
+  padding-left:8px;
+  padding-right:8px;
+  text-align:center;
+  height:13px;
+  width:13px;
+  padding:0;
+  cursor:pointer;
+  border:1px solid #ccc!important;
+  background-color:transparent!important;
+}
+
+
+.w3-white, .w3-hover-white:hover{
+  color: #111111!important;
+  background-color: var(--header-color)!important
+}
+
+.selection-container{
+  flex: 30%;
+}
+
+.pre-order-container .selection-container h2{
+padding-bottom: 30px;
+}
+
+#i-pro-max{
+  display: none;
+  }
+
+.pre-order-container .selection-container #pro{
+cursor: pointer;
+padding: 20px;
+border: 2px #ccc solid;
+margin-bottom: 15px;
+border-radius: 20px;
+}
+
+.pre-order-container .selection-container #pro:hover{
+  border: 2px var(--link) solid;
+  color: aliceblue;
+}
+
+.pre-order-container .selection-container #pro-max{
+cursor: pointer;
+padding: 20px;
+border: 2px #ccc solid;
+margin-top: 15px;
+border-radius: 20px;
+}
+
+.pre-order-container .selection-container #pro-max:hover{
+  border: 2px var(--link) solid;
+  color: aliceblue;
+}
+
+/* MAIN - SPECS.html */
+main{
+  padding: 60px 0 0 0;
+  margin: 0 auto;
+}
+
+p{
+  font-size: 17px;
+  line-height: 20px;
+}
+
+sup{
+  font-size: 10px;
+}
+
+.indent{
+  padding-left: 18px;
+}
+
+.h2-title h2{
+  font-size: 22px;
+  color: var(--h2-color);
+  padding-left: 5px;
+}
+
+/* CONTAINER FORMAT-1 */
+.container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+  
+  .container .h2-title{
+    flex: 20%;
+    padding: 5px;
+    width: 70px;
+  }
+  
+  .container .col1{
+    flex: 40%;
+    padding: 10px;
+  }
+  
+  .container .col2{
+    flex: 40%;
+    padding: 10px;
+    text-align: left;
+    }
+
+    /* CONTAINER FORMAT-2 */
+.cntner{
+display: flex;
+justify-content: space-around;
+align-items: baseline;
+}
+
+.cntner .h2-title{
+  flex: 20%;
+  padding: 5px;
+  width: 70px;
+}
+
+/* CONTAINER FORMAT-2.1 */
+.cntner .col-1, .cntner .col-2{
+  flex: 42.5%;
+  padding: 10px;
+  text-align: center;
+  }
+
+/* CONTAINER FORMAT-2.2 */  
+  .cntner .col{
+    flex: 85%;
+    padding: 5px;
+    display: block;
+    align-items: center;
+  }
+
+  .cntner .col h3{
+    padding-top: 24px;
+    padding-bottom: 5px;
+  }
+
+  /* CONTAINER FORMAT-2.3 */
+  .cntner .col-1a{
+  flex: 15%;
+  padding: 5px;
+  text-align: left;
+  }
+
+  .cntner .col-2a{
+  flex: 70%;
+  padding: 5px;
+  text-align: left;
+  }
+
+  /* CONTAINER FORMAT-2.4 */
+.cntner .col-1b{
+  flex: 30%;
+  padding: 5px;
+  text-align: left;
+}
+
+.cntner .col-2b{
+  flex: 30%;
+  padding: 5px;
+  text-align: left;
+}
+
+.cntner .col-3b{
+  flex: 25%;
+  padding: 5px;
+  text-align: left;
+}
+
+
+.grid-col{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 60px;
+}
+
+.cntner .col .grid-col .app-icon{
+  height: 30px;
+  text-align: center;
+}
+
+.cntner .col .grid-col .app-icon p{
+font-size: 14px;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+}
+
+.paddng-top{
+  padding-top: 10px;
+}
+
+.cntner .algn-left{
+text-align: left;
+padding-left: 30px;
+}
+
+
+
+
+
+
+/* @MEDIA 746PX */
+
+  @media screen and (max-width: 746px){
+
+    #nav-bar{
+      display: none;
+      transition: right 4s;
+    }
+
+    #header #header-img{
+      margin: 0 auto;
+      transition: right 2s;
+    }
+
+    #header .fa-bars{
+      display: block ;
+      font-size: 1.5rem;
+      font-weight: 800;
+      cursor: pointer;
+      padding-right: 10px;
+      color: rgba(40, 42, 53);
+    }
+
+    #header .fa-bars:hover{
+      color: azure;
+      transition: all 0.3s;
+    }
+
+    .dropdown ul{
+      display: block;
+      margin: 10px;
+      float: right;
+      padding-right: 0px;
+    }
+    
+    .dropdown ul li{
+      width: 150px;
+      padding: 10px;
+      list-style-type: none;
+      font-size: 16px;
+      cursor: auto;
+      text-align: center;
+    }
+    
+    .dropdown ul li a{
+      text-decoration: none;
+      font-family: sans-serif;
+      font-weight: 500;
+      color: rgba(40, 42, 53);
+    }
+    
+    .dropdown ul li a:hover{
+      color: var(--h2-color);
+      transition: all 0.3s;
+    }
+
+    .fa-bars:hover .dropdown{
+      display: block;
+      position: absolute;
+      color: #000;
+      background-color: rgb(224, 186, 235);
+      min-width: 90px;
+      right: 0;
+      top: -1;
+      transition: all 2s;
+    }
+
+    .fa-bars:hover .dropdown ul{
+      display: block;
+      transition: all 2s;
+    }
+
+    .fa-bars:hover .dropdown ul li{
+      width: 110px;
+      list-style-type: none;
+      font-size: 18px;
+      transition: all 2s;
+    }
+  }

@@ -88,13 +88,6 @@
     cursor: pointer;
 }
 
-.pre-ordr{
-  border: 0;
-  margin: 0 auto;
-  background-color: var(--footer-text-color);
-  border-radius: 20px;
-  padding: 3px 0;
-}
 
 #nav-bar ul{
   display: flex;
@@ -119,6 +112,14 @@
     color: aliceblue;
   }
 
+
+.pre-ordr{
+  border: 0;
+  margin: 0 auto;
+  background-color: var(--footer-text-color);
+  border-radius: 20px;
+  padding: 3px 0;
+}
 
 
 /* FOOTER */
